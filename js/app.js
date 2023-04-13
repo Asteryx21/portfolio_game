@@ -442,16 +442,16 @@ window.addEventListener('keydown', (e) => {
     }
     return
   }
-  if (e.key === 'w') {
+  if (e.key === 'w' || e.key === 'ArrowUp') {
     isMovingUp = true;
   }
-  if (e.key === 'a') {
+  if (e.key === 'a'|| e.key === 'ArrowLeft') {
     isMovingLeft = true;
   }
-  if (e.key === 's') {
+  if (e.key === 's'|| e.key === 'ArrowDown') {
     isMovingDown = true;
   }
-  if (e.key === 'd') {
+  if (e.key === 'd'|| e.key === 'ArrowRight') {
     isMovingRight = true;
   }
   if (e.key === ' ') {
@@ -480,18 +480,19 @@ window.addEventListener('keydown', (e) => {
 
 window.addEventListener('keyup', (e) => {
 
-  if (e.key === 'w') {
+  if (e.key === 'w' || e.key === 'ArrowUp') {
     isMovingUp = false;
-  }  
-  if (e.key === 'a') {
+  }
+  if (e.key === 'a'|| e.key === 'ArrowLeft') {
     isMovingLeft = false;
-  }  
-  if (e.key === 's') {
+  }
+  if (e.key === 's'|| e.key === 'ArrowDown') {
     isMovingDown = false;
-  }  
-  if (e.key === 'd') {
+  }
+  if (e.key === 'd'|| e.key === 'ArrowRight') {
     isMovingRight = false;
   }
+
 });
 
 
