@@ -72,17 +72,14 @@ button:hover {
 @media screen and (max-width:575px) {
 
     #title-screen h1 {
-        font-family: 'Source Code Pro', monospace;
         font-size: 24px;
     }
       
     #title-screen p {
-        font-family: 'Source Code Pro', monospace;
         font-size: 12px;
     }
       
     #start-button {
-        font-family: 'Source Code Pro', monospace;
         font-size: 12px;
     } 
     #pc{
@@ -98,7 +95,6 @@ button:hover {
         display: block;
     }
     #mobile-start-button{
-        font-family: 'Source Code Pro', monospace;
         display: block;
     }
 }
