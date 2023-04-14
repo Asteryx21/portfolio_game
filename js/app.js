@@ -416,11 +416,11 @@ window.addEventListener('keydown', (e) => {
     if (e.key === ' ') {
           if (player.interactionAsset.dialogueBoxClass === "item1" && progress=== false){
             document.querySelector('#dialogueText').innerHTML = 
-            "Reach me at <br><br> Mobile phone: +30 6983616172 <br><br>" +
-            "Email: evanskaps@gmail.com <br><br>"+
-            "LinkedIn: <a  href= 'https://www.linkedin.com/in/evanskaps/' target='blank'>in/evanskaps</a> <br><br>" +
-            "GitHub: <a  href= 'https://github.com/Asteryx21/' target='blank'>Asteryx21</a> <br><br>" +
-            "Or send me an envelope?<br><br> Adress: 25 Ploutarchou 15122 Athens, Greece<br><br>";
+            "Reach me at <br><br> <b>Mobile phone:</b> +30 6983616172 <br><br>" +
+            "<b>Email:</b> evanskaps@gmail.com <br><br>"+
+            "<b>LinkedIn:</b> <a  href= 'https://www.linkedin.com/in/evanskaps/' target='blank'>in/evanskaps</a> <br><br>" +
+            "<b>GitHub:</b> <a  href= 'https://github.com/Asteryx21/' target='blank'>Asteryx21</a> <br><br>" +
+            "Or send me an envelope?<br><br> <b>Adress:</b> 25 Ploutarchou 15122 Athens, Greece<br><br>";
             document.querySelector('.item1 h1').textContent = 'Contact me...';
             document.querySelector('.item1 small').style.display = 'none';
             document.querySelector('#cv_button').style.display = 'none';

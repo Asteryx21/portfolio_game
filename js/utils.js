@@ -86,3 +86,7 @@ function viewGit(git){
     window.open('https://github.com/Asteryx21/Databases', '_blank');
   }
 }
+
+function staticPage(){
+  window.open('https://asteryx21.github.io/evanskaps/', '_blank');
+}
