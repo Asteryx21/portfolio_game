@@ -4,6 +4,13 @@
     font-family: 'Source Code Pro', monospace;
     box-sizing: border-box;
     font-size: large;
+    cursor: url('../assets/default_cursor.png'), auto;
+}
+button:hover{
+    cursor: url('../assets/cursor_pointer.png'), auto;
+}
+a:hover{
+    cursor: url('../assets/cursor_pointer.png'), auto;
 }
 
 body {
@@ -21,11 +28,13 @@ h2 {
 button {
     border: 0;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 26px;
+    
 }
 
 button:hover {
     background-color: #ddd;
+  
 }
 
 #title-screen {

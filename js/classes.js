@@ -26,18 +26,6 @@ class Sprite {
     }
   
     draw() {
-      // c.save()
-      // c.translate(
-      //   this.position.x + this.width / 2 ,
-      //   this.position.y + this.height / 2
-      // )
-      // c.rotate(this.rotation)
-      // c.translate(
-      //   -this.position.x - this.width / 2,
-      //   -this.position.y - this.height / 2
-      // )
-      // c.globalAlpha = this.opacity
-  
       const crop = {
         position: {
           x: this.frames.val * (this.width / this.scale),
@@ -56,7 +44,7 @@ class Sprite {
         height: this.image.height
       }
   
-      c.drawImage(
+      ctx.drawImage(
         this.image,
         crop.position.x,
         crop.position.y,
@@ -67,8 +55,6 @@ class Sprite {
         image.width * this.scale,
         image.height * this.scale
       )
-  
-      // c.restore()
   
       if (!this.animate) return
   
@@ -82,6 +68,22 @@ class Sprite {
       }
     }
 }
+
+class Background{
+  constructor({position,image}){
+    this.position = position
+    this.image = new Image()
+    this.image.src = image.src
+  }
+
+  draw(){
+    ctx.drawImage(
+      this.image,
+      this.position.x,
+      this.position.y,
+    )
+  }
+}
   
 class Boundary {
     static width = 64
@@ -93,8 +95,8 @@ class Boundary {
     }
   
     draw() {
-      c.fillStyle = 'rgba(255, 0, 0, 0)'
-      c.fillRect(this.position.x, this.position.y, this.width, this.height)
+      ctx.fillStyle = 'rgba(255, 0, 0, 0)'
+      ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
     }
 }
   

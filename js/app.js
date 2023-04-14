@@ -1,5 +1,5 @@
 const canvas = document.querySelector('canvas')
-const c = canvas.getContext('2d')
+const ctx = canvas.getContext('2d')
 
 const titleScreen = document.getElementById('title-screen')
 titleScreen.style.display = 'flex'
@@ -10,9 +10,6 @@ startButton.addEventListener('click', () => {
   canvas.style.display = 'flex'
   animate();
 })
-
-
-
 
 
 
@@ -180,7 +177,7 @@ itemsMap.forEach((row, i) => {
           },
           scale: 4,
           animate: true,
-          dialogueBoxClass: 'item6'
+          dialogueBoxClass: 'steve'
         })
       )
     }
@@ -231,7 +228,7 @@ const player = new Sprite({
   scale: 0.8 // Set the scale to make the sprite smaller
 })
 
-const background = new Sprite({
+const background = new Background({
   position: {
     x: offset.x,
     y: offset.y
@@ -259,7 +256,7 @@ const renderables = [
 
 function animate() {
   
-  c.clearRect(0,0, canvas.width, canvas.height)
+  ctx.clearRect(0,0, canvas.width, canvas.height)
   window.requestAnimationFrame(animate)
   renderables.forEach((renderable) => {
     renderable.draw()
@@ -435,6 +432,7 @@ window.addEventListener('keydown', (e) => {
         document.querySelector('.item3').style.display = 'none'
         document.querySelector('.item4').style.display = 'none'
         document.querySelector('.item5').style.display = 'none'
+        document.querySelector('#steveDialogueBox').style.display = 'none'
         document.getElementById('dialogueText').innerHTML = "Hey there! I'm the embodiment of the awesomeness that is the creator of this game!<br><br>I am paid to say that...<br><br>I am not really that ugly, I am just a bad designer :-) <br><br>Want to know more about me? Sorry not a choice... <br><br>During my studies, I discovered my passion for software engineering and development. I am a strong team player who can quickly learn and apply new technologies and thrives on working in agile environments. In my free time I enjoy playing MMORPG games."; // Change the text back
         document.querySelector('.item1 h1').textContent = 'About me...';
         document.querySelector('#cv_button').style.display = 'block';
@@ -456,8 +454,6 @@ window.addEventListener('keydown', (e) => {
   }
   if (e.key === ' ') {
     if (!player.interactionAsset) return
-    // console.log(player.interactionAsset)
-    // beginning the conversation
     if (player.interactionAsset.dialogueBoxClass === "item1"){
       document.querySelector('.item1').style.display = 'flex'
       player.isInteracting = true
@@ -472,6 +468,9 @@ window.addEventListener('keydown', (e) => {
       player.isInteracting = true
     }else if (player.interactionAsset.dialogueBoxClass === "item5"){
       document.querySelector('.item5').style.display = 'flex'
+      player.isInteracting = true
+    }else if (player.interactionAsset.dialogueBoxClass === "steve"){
+      document.querySelector('#steveDialogueBox').style.display = 'flex'
       player.isInteracting = true
     }
   }
