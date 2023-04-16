@@ -38,11 +38,17 @@ function ItemCollision({
 function showCV(){
     window.open('./assets/evanskaps.pdf', '_blank');
 }
+function showDiploma(){
+  window.open('./assets/Diploma.pdf', '_blank');
+}
 function showThesis(){
     window.open('https://evanskaps.itch.io/galaxy-solutions', '_blank');
 }
 function showPaper(){
     window.open('./assets/m65496-paper-final.pdf', '_blank');
+}
+function showRecommendation(){
+  window.open('./assets/Recommendation-Letter.pdf', '_blank');
 }
   
 function viewDemo(demo){

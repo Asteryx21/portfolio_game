@@ -225,7 +225,7 @@ const player = new Sprite({
     right: playerRightImage,
     down: playerDownImage
   },
-  scale: 0.8 // Set the scale to make the sprite smaller
+  scale: 3.3 // Set the scale to make the sprite smaller
 })
 
 const background = new Background({
@@ -406,7 +406,7 @@ function animate() {
 }
 
 let progress = false
-let lastKey = ''
+
 window.addEventListener('keydown', (e) => {
 
   if (player.isInteracting) {
@@ -494,6 +494,16 @@ window.addEventListener('keyup', (e) => {
 
 });
 
+// Add event listener for visibilitychange event
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    // Tabbed out, stop player movement
+    isMovingUp = false;
+    isMovingDown = false;
+    isMovingLeft = false;
+    isMovingRight = false;
+  }
+});
 
 let clicked = false
 addEventListener('click', () => {
