@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="styles/dialogues.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </head>
+
 <body>
     <div id="title-screen">
         <h1>Evangelos Kapsoulakis</h1>
@@ -18,7 +20,7 @@
         <p id="pc">Use the W, A, S, D or Arrow keys to move</p>
         <p id="pc">Spacebar to interact with ghosts & progress dialogues</p>
         <p id="pc">Interacting with ghosts you will learn more about me</p>
-       
+
         <p id="mobile">For my original portfolio page you need a PC or laptop</p>
         <p id="mobile">Normaly this is a game (an interactive way to learn about me) </p>
         <p id="mobile"> You can access the static portofolio page here:</p>
@@ -27,9 +29,8 @@
     </div>
 
     <div style="display: inline-block; position: relative">
-    
-        <div id="overlappingDiv"
-        style="
+
+        <div id="overlappingDiv" style="
             background-color: black;
             position: absolute;
             top: 0;
@@ -39,44 +40,47 @@
             opacity: 0;
             pointer-events: none;
             z-index: 10;
-        "
-        ></div>   
+        "></div>
 
         <canvas></canvas>
-                                <!-- ABOUT ME -->
+        <!-- ABOUT ME -->
         <div id="characterDialogueBox" class="item1 ">
             <h1>About me...</h1>
             <div id="dialogueText">
-            Boo! I'm Ghosty, the embodiment of the creator of this game!<br><br>
-            You can call me Boo-tiful, I am not really that ugly, I am just a bad designer :-) <br><br>
-            Want to know more about me? (It's not really a choice) <br><br>
-            During my studies, I discovered my passion for software engineering and development. 
-            I am a strong team player who can quickly learn and apply new technologies and thrives on working in agile environments. 
-            In my free time I enjoy playing MMORPG games.
+                Boo! I'm Ghosty, the embodiment of the creator of this game!<br><br>
+                You can call me Boo-tiful, I am not really that ugly, I am just a bad designer :-) <br><br>
+                Want to know more about me? <br><br>
+                During my studies, I discovered my passion for software engineering and development.
+                I am a strong team player who can quickly learn and apply new technologies and thrives on working in
+                agile environments.
+                <br><br>
+                I enjoy camping on my native island, Lefkada, and volunteering to help keep the local environment clean
+                - when I'm not
+                occupied hunting down the nefarious Lich King in World of Warcraft, that is.
             </div>
             <small>Click spacebar to progress & close the text</small>
             <div id="dialogueButtons">
                 <button id="cv_button" onclick="showCV()">CV</button>
             </div>
         </div>
-                                <!-- EDUCATION SECTION -->
+        <!-- EDUCATION SECTION -->
         <div id="characterDialogueBox" class="item2">
             <h1>My education...</h1>
             <div id="dialogueText2">
-            Well, let me haunt you with my masterful graduation. <br><br>
-            A wild ride... It was a spooktacular moment, indeed!<br><br>
-            I spent countless sleepless nights coding, debugging, studying for exams 
-            and finally succeeding with my Thesis getting published. <br><br> 
-            I now officially hold Masters degree in Computer Engineering & Informatics, 
-            and I'm ready to learn even more within the industry.
+                Well, let me haunt you with my masterful graduation. <br><br>
+                A wild ride... It was a spooktacular moment, indeed!<br><br>
+                I spent countless sleepless nights coding, debugging, studying for exams
+                and finally succeeding with my Thesis getting published. <br><br>
+                I now officially hold Masters degree in Computer Engineering & Informatics,
+                and I'm ready to learn even more within the industry.
             </div>
             <div id="dialogueButtons2">
                 <button id="diploma" onclick="showDiploma()">View Diploma</button>
-                <button id="thesis" onclick="showThesis()">View Thesis</button>
-                <button id="paper" onclick="showPaper()">View Paper</button>
+                <button id="thesis" onclick="showThesis()">View Publication</button>
+                <!-- <button id="paper" onclick="showPaper()">View Paper</button> -->
             </div>
         </div>
-                                <!-- SKILLS SECTION -->
+        <!-- SKILLS SECTION -->
         <div id="characterDialogueBox" class="item3">
             <h1>My Technical skills...</h1>
             <small>Boo! I'm Codezilla, the ghost of coding expertise. Want to see what I'm capable of?</small>
@@ -85,224 +89,312 @@
                     <li>JavaScript</li>
                     <li>Python</li>
                     <li>React.js</li>
-                    <li>Angular.js</li>
-                    <li>PHP</li>
-                    <li>Java</li>
-                    <li>React Native JS</li>
+                    <li>Django</li>
                     <li>Node.js</li>
                     <li>MySql</li>
-                    <li>CSS & SCSS</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>Angular.js</li>
                 </ul>
                 <ul class="column">
                     <li>Git</li>
+                    <li>Github Actions</li>
+                    <li>Heroku</li>
+                    <li>Docker</li>
+                    <li>Google Cloud</li>
+                    <li>PostgreSQL</li>
+                    <li>UI/UX</li>
                     <li>Figma</li>
-                    <li>Android Studio</li>
                     <li>Visual Studio Code</li>
-                    <li>SPSS</li>
                 </ul>
-                <ul class="column">
+                <!-- <ul class="column">
                     <li>UI/UX</li>
                     <li>Data Analysis</li>
                     <li>Data Visualization</li>
                     <li>Machine Learning</li>
                     <li>NLP</li>
-                </ul>
+                </ul> -->
             </div>
         </div>
-            <!-- EXPERIENCE SECTION -->
+        <!-- EXPERIENCE SECTION -->
         <div id="characterDialogueBox" class="item4">
             <h1>My Experience...</h1>
             <div id="dialogueText4">
                 <div class="experience-section">
+                    <h2>Alma Economics, Software Engineer (2023-present)</h2>
+                    <div class="tech-tags">React, Django, Python, Google Cloud, Docker, Github, PostgreSQL</div>
+                    <p class="experience-description">
+                    <ul style="padding:15px">
+                        <li>
+                            Developed applications using React.js, Django, and FastAPI for both clients (e.g., UK public
+                            sector) and
+                            internal products. Some of the apps are: <a href="https://evidencemap.com/"
+                                target="_blank">Evidencemap</a>, <a href="https://homeless-service-map.herokuapp.com/"
+                                target="_blank">Homeless Service</a>, <a href="https://impactestimator.com/"
+                                target="_blank">Impact Estimator</a>,
+                            Online
+                            platform to host an experiment for nearly 6,000 UK adults (Amazon clone).
+                        </li>
+                        <li>
+                            Built REST APIs and webhooks, worked with technologies such as Celery for task queuing,
+                            Stripe for
+                            subscriptions payment processing and auth0.
+                        </li>
+                        <li>
+                            Participated in the entire lifecycle of software development, from concept to launch.
+                            Utilized Kanban
+                            boards and worked on weekly sprints.
+                        </li>
+                        <li>
+                            Deployed applications on Google Cloud and Heroku, implementing basic CI/CD pipelines using
+                            GitHub
+                            Actions. Dockerized legacy applications and migrated them from Heroku to Google Cloud,
+                            deploying them
+                            with Docker Swarm as the container orchestrator.
+                        </li>
+                        <li>
+                            Collaborated with design teams to ensure UI/UX consistency and with data science teams to
+                            integrate
+                            NLP models into functional applications.
+                        </li>
+                        <li>
+                            Participated on the documentation of on-going and previous projects.
+                        </li>
+
+                    </ul>
+                    </p>
+
+                </div>
+                <div class="experience-section">
                     <h2>Internship at LCI LAB of the NTNU (2022-2023)</h2>
                     <div class="tech-tags">Angular, CSS, Figma, Git, Docker</div>
                     <p class="experience-description">
-                    As an intern with the LCI lab of the Computer Science Department, 
-                    I worked on the <a href="https://surroundedby.science/" target="_blank">Surrounded by Science</a> project ,
-                    which aims to increase kids' engagement with science. 
-                    My primary responsibility was to re-design and develop the front end of the Science Chaser web app.
+                        As an intern with the LCI lab of the Computer Science Department,
+                        I worked on the <a href="https://surroundedby.science/" target="_blank">Surrounded by
+                            Science</a> project ,
+                        which aims to increase kids' engagement with science.
+                        My primary responsibility was to re-design and develop the front end of the Science Chaser web
+                        app.
 
-                    I collaborated closely with a team from the lab, and we were in regular communication with the University of Twente team, who were responsible for the backend development and project coordination. 
-                    Our team had a strict deadline to complete the web app by the start of January 2023, as it was scheduled to be tested in a museum in Italy.
-                        
-                    Throughout the project, I gained valuable experience in front-end development and working collaboratively with a team. 
-                    It was also exciting to work on a project with such a significant real-world application, as the web app has the potential to increase kids' awareness and engagement with science.
+                        I collaborated closely with a team from the lab, and we were in regular communication with the
+                        University of Twente team, who were responsible for the backend development and project
+                        coordination.
+                        Our team had a strict deadline to complete the web app by the start of January 2023, as it was
+                        scheduled to be tested in a museum in Italy.
+
+                        Throughout the project, I gained valuable experience in front-end development and working
+                        collaboratively with a team.
+                        It was also exciting to work on a project with such a significant real-world application, as the
+                        web app has the potential to increase kids' awareness and engagement with science.
                     </p>
                     <div class="experience-buttons">
                         <button class="view-demo-button" onclick="showRecommendation()">
                             Recommendation Letter
                         </button>
-                        </div>
+                    </div>
                 </div>
                 <div class="experience-section">
                     <h2>Master Thesis (Serious Game Development)</h2>
                     <div class="tech-tags">Python, PyGame, RenPy, Figma, SPSS</div>
                     <p class="experience-description">
-                    Developed, and designed a Serious Game - conducted Research - Data analysis.
-                    It turned out to become a paper that was published and will be presented at <a target="_blank" href="https://2023.ieee-educon.org/">IEEE EDUCON 2023</a>.
-                    In this study, a serious game called “Galaxy Solutions” was developed. 
-                    This game simulates all the stages of the recruitment process. 
-                    The main objective of this game is to help graduates acquire basic interview skills and be aware of the whole process by making the learning experience more enjoyable and engaging. 
-                    The game was evaluated by 105 students, and it was found usable by all the students, regardless of their success level in the game, and had a statistically significant learning effect, as the pre-posttest analysis revealed.
+                        Developed, and designed a Serious Game - conducted Research - Data analysis.
+                        It turned out to become a paper that was published and will be presented at <a target="_blank"
+                            href="https://2023.ieee-educon.org/">IEEE EDUCON 2023</a>.
+                        In this study, a serious game called “Galaxy Solutions” was developed.
+                        This game simulates all the stages of the recruitment process.
+                        The main objective of this game is to help graduates acquire basic interview skills and be aware
+                        of the whole process by making the learning experience more enjoyable and engaging.
+                        The game was evaluated by 105 students, and it was found usable by all the students, regardless
+                        of their success level in the game, and had a statistically significant learning effect, as the
+                        pre-posttest analysis revealed.
                     </p>
                     <div class="experience-buttons">
-                    <button class="view-demo-button" onclick="viewDemo(2)">
-                        View Demo
-                    </button>
+                        <button class="view-demo-button" onclick="viewDemo(2)">
+                            Download game
+                        </button>
                     </div>
                 </div>
                 <div class="experience-section">
-                    <h2>Project KaPa web app (2023-present)</h2>
+                    <h2>Projectkapa web app (2024-present)</h2>
                     <div class="tech-tags">HTML5, SCSS/CSS, JavaScript, PHP, Apache, MySQL</div>
                     <p class="experience-description">
-                    This project is designed to facilitate and help the efforts of a team of dedicated volunteers who are committed to cleaning up polluted areas. 
-                    The app allows users to register and gain access to a variety of features and resources that will help them stay informed and engaged with the team's ongoing activities.
+                    <ul style="padding:15px">
+                        <li>
+                            This project is designed to help the efforts of a team of volunteers who are committed to
+                            cleaning up
+                            polluted areas. This is a personal project that I work on to explore new technologies and
+                            practicies.
+
+                        </li>
+                        <li>
+                            Developed restful APIs, implemented authentication using JWT, used express-validator,
+                            passport and
+                            sequilize. Practised dockerizing a fullstack application, deploying on Google Cloud using
+                            docker swarm as
+                            container orchestration tool. Used Github actions for some basic CI/CD.
+
+                        </li>
+                    </ul>
                     </p>
-                    <div class="experience-buttons">
-                    <button class="view-demo-button" onclick="viewDemo(3)">
-                        View Demo
-                    </button>
-                    <button class="view-git-button" onclick="viewGit(3)">
-                        View GitHub
-                    </button>
-                    </div>
                 </div>
                 <div class="experience-section">
                     <h2>Project waste (2023)</h2>
                     <div class="tech-tags">React JS, React Leaflet, React Three Fiber, Three.js</div>
                     <p class="experience-description">
-                    The project displays 2020 Eurostat data on recycling rates, waste production per capita, and renewable energy usage percentages for various European countries. 
-                    The data is visualized on a map, allowing users to compare the environmental sustainability of different regions at a glance. 
-                    The user can select from the top left dropmenu the data that he wants to visualize on the map. 
-                    The legend updates aswell providing information of what the user sees each time. 
-                    Also by clicking on each country displayed on the map he gets more information about the data that is provided.
+                        The project displays 2020 Eurostat data on recycling rates, waste production per capita, and
+                        renewable energy usage percentages for various European countries.
+                        The data is visualized on a map, allowing users to compare the environmental sustainability of
+                        different regions at a glance.
+                        The user can select from the top left dropmenu the data that he wants to visualize on the map.
+                        The legend updates aswell providing information of what the user sees each time.
+                        Also by clicking on each country displayed on the map he gets more information about the data
+                        that is provided.
                     </p>
                     <div class="experience-buttons">
-                    <button class="view-demo-button" onclick="viewDemo(4)">
-                        View Demo
-                    </button>
-                    <button class="view-git-button" onclick="viewGit(4)">
-                        View GitHub
-                    </button>
+                        <button class="view-demo-button" onclick="viewDemo(4)">
+                            View Demo
+                        </button>
+                        <button class="view-git-button" onclick="viewGit(4)">
+                            View GitHub
+                        </button>
                     </div>
                 </div>
                 <div class="experience-section">
                     <h2>Game Hopper (2023)</h2>
                     <div class="tech-tags">React JS, API, Data filtering</div>
                     <p class="experience-description">
-                    Game Hopper is a web page that allows users to search and filter through a vast collection 
-                    of free to play games from an <a href="https://www.freetogame.com/api-doc" target="_blank">API</a>. 
-                    Users can easily search for games by name, filter them by type, console, and other criteria, 
-                    making it easy to find games that match their preferences. 
-                    The web page fetches data from the API and displays the games with brief details, 
-                    such as game title, genre and platform.
+                        Game Hopper is a web page that allows users to search and filter through a vast collection
+                        of free to play games from an <a href="https://www.freetogame.com/api-doc"
+                            target="_blank">API</a>.
+                        Users can easily search for games by name, filter them by type, console, and other criteria,
+                        making it easy to find games that match their preferences.
+                        The web page fetches data from the API and displays the games with brief details,
+                        such as game title, genre and platform.
                     </p>
                     <div class="experience-buttons">
-                    <button class="view-demo-button" onclick="viewDemo(5)">
-                        View Demo
-                    </button>
-                    <button class="view-git-button" onclick="viewGit(5)">
-                        View GitHub
-                    </button>
+                        <button class="view-demo-button" onclick="viewDemo(5)">
+                            View Demo
+                        </button>
+                        <button class="view-git-button" onclick="viewGit(5)">
+                            View GitHub
+                        </button>
                     </div>
-                </div> 
+                </div>
                 <div class="experience-section">
                     <h2>Movie recommendation system</h2>
                     <div class="tech-tags">Python, pandas, matplotlib, kNN algorithm, sklearn</div>
                     <p class="experience-description">
-                    A group project worked in a team of three. 
-                    We developed a system that suggests movies to users based on the film they have watched and the ratings they have made. 
-                    In addition, data were analyzed from which information was extracted and visualized. 
-                    To develop the system, we used a user-based collaborative filtering technique & kNN algorithm. 
-                    We examined two cases.
-                    Firstly the user has not rated any movies yet, and secondly, the user has already rated movies.
+                        A group project worked in a team of three.
+                        We developed a system that suggests movies to users based on the film they have watched and the
+                        ratings they have made.
+                        In addition, data were analyzed from which information was extracted and visualized.
+                        To develop the system, we used a user-based collaborative filtering technique & kNN algorithm.
+                        We examined two cases.
+                        Firstly the user has not rated any movies yet, and secondly, the user has already rated movies.
                     </p>
                     <div class="experience-buttons">
                         <button class="view-git-button" onclick="viewGit(6)">
                             View GitHub
                         </button>
                     </div>
-                </div>   
+                </div>
                 <div class="experience-section">
                     <h2>Natural language processing</h2>
                     <div class="tech-tags">Python, nltk library, TFIDF, Classification</div>
                     <p class="experience-description">
-                    Developed a crawler is monitoring news websites & downloads articles.
-                    After that, the program pre-processes & analyses the data (words tokenization), 
-                    so we can represent the web pages in the vector space model. 
-                    Then the program creates an index (based on TFIDF) & evaluates it (using queries). T
-                    he second part of the project: Developed a classification system for uncategorized articles that were found 
-                    <a href="http://qwone.com/~jason/20Newsgroups/" target="_blank">here</a>.
+                        Developed a crawler is monitoring news websites & downloads articles.
+                        After that, the program pre-processes & analyses the data (words tokenization),
+                        so we can represent the web pages in the vector space model.
+                        Then the program creates an index (based on TFIDF) & evaluates it (using queries). T
+                        he second part of the project: Developed a classification system for uncategorized articles that
+                        were found
+                        <a href="http://qwone.com/~jason/20Newsgroups/" target="_blank">here</a>.
                     </p>
                     <div class="experience-buttons">
                         <button class="view-git-button" onclick="viewGit(7)">
                             View GitHub
                         </button>
                     </div>
-                </div>  
+                </div>
                 <div class="experience-section">
                     <h2>Knowledge representation and reasoning</h2>
                     <div class="tech-tags">Java, NetBeans, JUnit, Protégé, Owl ontologies.</div>
                     <p class="experience-description">
-                    Created a custom owl ontology for movies with the Protégé tool based on Movies (Produciton staff, genre, location of shooting etc.). 
-                    Then developed, an application that loads the OWL ontology and applies the Inference model, 
-                    retrieves and presents individuals of the ontology after the selection of a class by the user. 
-                    Allows inserting new individuals. 
-                    Allows to search for individuals based on user-defined parameter values ​​using SPARQL queries. 
+                        Created a custom owl ontology for movies with the Protégé tool based on Movies (Produciton
+                        staff, genre, location of shooting etc.).
+                        Then developed, an application that loads the OWL ontology and applies the Inference model,
+                        retrieves and presents individuals of the ontology after the selection of a class by the user.
+                        Allows inserting new individuals.
+                        Allows to search for individuals based on user-defined parameter values ​​using SPARQL queries.
                     </p>
                     <div class="experience-buttons">
-                    <button class="view-demo-button" onclick="viewDemo(8)">
-                        View Demo
-                    </button>
-                    <button class="view-git-button" onclick="viewGit(8)">
-                        View GitHub
-                    </button>
+                        <button class="view-demo-button" onclick="viewDemo(8)">
+                            View Demo
+                        </button>
+                        <button class="view-git-button" onclick="viewGit(8)">
+                            View GitHub
+                        </button>
                     </div>
-                </div>     
+                </div>
                 <div class="experience-section">
                     <h2>Staff evaluation system</h2>
                     <div class="tech-tags">MySQL, Java, JUnit, MySQL Workbench, Netbeans</div>
                     <p class="experience-description">
-                    A staff evaluation system of a group of companies to which four categories of users are connected: 
-                    Managers of the company in which the staff is evaluated. 
-                    Managers decide on the positions that will be, announced for promotion. 
-                    They also update employee records whenever there is a change (eg additional certification, an additional letter of recommendation, etc.). 
-                    Evaluators who work with the company and they evaluate the staff, announce the job openings that can be claimed by employees, and make evaluations. 
-                    Employees of the company. They can submit a request for a job position in which they can be promoted or transferred. 
-                    And lastly the system administrator.
+                        A staff evaluation system of a group of companies to which four categories of users are
+                        connected:
+                        Managers of the company in which the staff is evaluated.
+                        Managers decide on the positions that will be, announced for promotion.
+                        They also update employee records whenever there is a change (eg additional certification, an
+                        additional letter of recommendation, etc.).
+                        Evaluators who work with the company and they evaluate the staff, announce the job openings that
+                        can be claimed by employees, and make evaluations.
+                        Employees of the company. They can submit a request for a job position in which they can be
+                        promoted or transferred.
+                        And lastly the system administrator.
                     </p>
                     <div class="experience-buttons">
                         <button class="view-git-button" onclick="viewGit(9)">
                             View GitHub
                         </button>
                     </div>
-                </div>            
+                </div>
             </div>
         </div>
-                <!-- END SECTION & CREDITS -->
+        <!-- END SECTION & CREDITS -->
         <div id="characterDialogueBox" class="item5">
             <h1>Hope you enjoed 💕</h1>
             <div id="dialogueText5">
-            Let's give a shout-out to the awesome graphics & music that make this game a spooktacular experience.
-            <br><br>
-            <b>Audio:</b> SVL | <a href="https://svl.itch.io/rpg-music-pack-svl" target="_blank">field_theme_1.wav</a><br><br>
-            <b>Map:</b> Designed by me | <a href="https://www.mapeditor.org/" target="_blank">Tiled map editor</a><br><br>
-            <b>Interactable items:</b> Designed by me | <a href="https://www.piskelapp.com/" target="_blank">Piskelapp</a><br><br> 
-            <b>User character:</b> javikolog | <a href="https://route1rodent.itch.io/16x16-rpg-character-sprite-sheet" target="_blank">itch.io</a><br><br> 
-            <b>House decoration tilesets:</b> LimeZu | <a href="https://limezu.itch.io/moderninteriors" target="_blank">itch.io</a> <br><br>
-            <b>House decoration tilesets:</b> Bonsaiheldin | <a href="https://opengameart.org/content/interior-tileset-16x16" target="_blank">opengameart</a><br><br>
-            <b>Outside decoration:</b><br> Uses the "16x16 RPG Tileset" by <a href="https://opengameart.org/content/16x16-rpg-tileset" target="_blank">hilau</a>, 
-            which is based off of "16x16 Game Assets" by <a href="https://opengameart.org/content/16x16-game-assets" target="_blank">George Bailey</a> 
-            and "LPC Thatched-roof Cottage" by <a href="https://opengameart.org/content/lpc-thatched-roof-cottage" target="_blank">bluecarrot16</a>.<br><br>
-            For those you have free time go find Steve, he sometimes appear outside my house :D <br><br>
+                Let's give a shout-out to the awesome graphics & music that make this game a spooktacular experience.
+                <br><br>
+                <b>Audio:</b> SVL | <a href="https://svl.itch.io/rpg-music-pack-svl"
+                    target="_blank">field_theme_1.wav</a><br><br>
+                <b>Map:</b> Designed by me | <a href="https://www.mapeditor.org/" target="_blank">Tiled map
+                    editor</a><br><br>
+                <b>Interactable items:</b> Designed by me | <a href="https://www.piskelapp.com/"
+                    target="_blank">Piskelapp</a><br><br>
+                <b>User character:</b> javikolog | <a
+                    href="https://route1rodent.itch.io/16x16-rpg-character-sprite-sheet"
+                    target="_blank">itch.io</a><br><br>
+                <b>House decoration tilesets:</b> LimeZu | <a href="https://limezu.itch.io/moderninteriors"
+                    target="_blank">itch.io</a> <br><br>
+                <b>House decoration tilesets:</b> Bonsaiheldin | <a
+                    href="https://opengameart.org/content/interior-tileset-16x16"
+                    target="_blank">opengameart</a><br><br>
+                <b>Outside decoration:</b><br> Uses the "16x16 RPG Tileset" by <a
+                    href="https://opengameart.org/content/16x16-rpg-tileset" target="_blank">hilau</a>,
+                which is based off of "16x16 Game Assets" by <a href="https://opengameart.org/content/16x16-game-assets"
+                    target="_blank">George Bailey</a>
+                and "LPC Thatched-roof Cottage" by <a href="https://opengameart.org/content/lpc-thatched-roof-cottage"
+                    target="_blank">bluecarrot16</a>.<br><br>
+                For those you have free time go find Steve, he sometimes appear outside my house :D <br><br>
             </div>
-        </div> 
+        </div>
         <!-- AFTER CREDITS DIALOGUE || STEVE -->
         <div id="steveDialogueBox">
-        Ribbit! You found me! I'm just a cheeky little frog hopping around in this pixelated world. 
-        Thanks for playing my friend! Ribbit!
-        </div>           
-        
+            Ribbit! You found me! I'm just a cheeky little frog hopping around in this pixelated world.
+            Thanks for playing my friend! Ribbit!
+        </div>
+
     </div>
 </body>
 <script src="data/audio.js"></script>
@@ -311,4 +403,5 @@
 <script src="js/utils.js"></script>
 <script src="js/classes.js"></script>
 <script src="js/app.js"></script>
+
 </html>
